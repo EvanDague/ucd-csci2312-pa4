@@ -49,7 +49,7 @@ namespace Gaming {
 
         Game();
         Game(unsigned width, unsigned height, bool manual = true); // note: manual population by default
-        Game(const Game &another);
+        Game(const Game &another) = delete;
         Game &operator=(const Game &other) = delete;
         ~Game();
 

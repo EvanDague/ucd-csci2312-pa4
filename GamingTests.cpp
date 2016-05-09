@@ -947,7 +947,7 @@ void test_game_populate(ErrorContext &ec, unsigned int numRuns) {
             g.addFood(0, 2);
             g.addFood(2, 1);
             g.addAdvantage(2, 2);
-
+            
             pass = (g.getNumPieces() == 5) &&
                    (g.getNumAgents() == 2) &&
                    (g.getNumResources() == 3);
@@ -1416,7 +1416,7 @@ void test_game_randomization(ErrorContext &ec, unsigned int numRuns) {
                 ++ actionCounts[actionType];
                 oldPos = pos;
             }
-
+            
             pass = actionCounts[ActionType::NE] > 100 &&
                     actionCounts[ActionType::NW] > 100 &&
                     actionCounts[ActionType::N] > 100 &&

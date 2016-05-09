@@ -52,8 +52,10 @@ namespace Gaming{
     }
     Game::~Game(){
         for(auto it = __grid.begin(); it != __grid.end(); ++it){
-            delete *it;
-            *it = nullptr;
+            if(*it != nullptr){
+                delete *it;
+                *it = nullptr;
+            }
         }
         __grid.clear();
     }

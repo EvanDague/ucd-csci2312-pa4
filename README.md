@@ -226,7 +226,7 @@ The `Game` gives each `Piece` on the grid a turn in a top-left row-wise bottom-r
 5. The `Game` checks if any of the two `Piece`-s have become unviable, by calling `isViable` on them, and removes the unviable ones from the board.
 
 ##### 3.6 Rounds
-
+0
 The `Game` is organized in a series of rounds. Each round effectively gives a turn to all the `Piece`-s which are still viable and on the `Game` grid. Though the `Game` is very simple, the `Game::round()` function is fairly complex due to all the little details that have to be taken care of. A round consists of the following steps:
 
 1. Go through all the `Piece`-s that are still viable and on the grid (this doesn't change between rounds) and:
